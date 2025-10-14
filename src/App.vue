@@ -1,30 +1,42 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import { ref } from 'vue'
+import ProjectList from './components/ProjectList.vue'
+import TaskBoard from './components/TaskBoard.vue'
+import SearchUser from './components/SearchUser.vue'
+import ProgressiveImage from './components/ProgressiveImage.vue'
+
+const selectedProjectId = ref<string | undefined>(undefined)
+
+const handleSelectProject = (projectId: string | undefined) => {
+  selectedProjectId.value = projectId
+}
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div :style="{ display: 'grid', gridTemplateColumns: '240px 1fr', gap: '24px', padding: '24px' }">
+    <aside>
+      <ProjectList
+          :selectedId="selectedProjectId"
+          @select="handleSelectProject"
+      />
+      <div :style="{ marginTop: '24px' }">
+        <SearchUser />
+      </div>
+    </aside>
+    <main>
+      <TaskBoard :projectId="selectedProjectId" />
+      <div :style="{ marginTop: '24px' }">
+        <h2>Preview Image (Progressive)</h2>
+        <ProgressiveImage
+            small="/vite.svg"
+            large="/src/assets/vue.svg"
+            alt="logo"
+        />
+      </div>
+    </main>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+/* 필요한 경우 추가 스타일 */
 </style>
