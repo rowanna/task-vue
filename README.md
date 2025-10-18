@@ -22,7 +22,7 @@
 ## 문제 목록
 각 TODO 옆의 파일을 열고 주석 내용을 따라 구현하세요. 
 
-- [ ] TODO 00 README.md 파일을 읽고 이해
+- [ ] TODO 00 Fork 후 로컬에서 `npm install` 및 README.md 파일을 읽고 이해
 - [ ] TODO 01 (기초) — src/utils/collection.ts: pluckTitles 구현
 - [ ] TODO 02 (기초) — src/utils/collection.ts: highPriorityFirst 구현
 - [ ] TODO 03 (기초) — src/utils/collection.ts: groupByDone 구현
@@ -43,7 +43,6 @@
 - 테스트는 Vue 의존성 없이 작성된 샘플이 있으며, 일부는 test.todo 로 표시되어 있습니다.
 
 ## 폴더 구조 개요
-- src/api/mock: 로컬 메모리 기반 API (지연 설정 지원)
 - src/utils: 컬렉션/디바운스/이미지 로딩 유틸
 - src/hooks: 커스텀 훅 (디바운스, 프로그레시브 이미지)
 - src/components: ProjectList, TaskBoard, SearchUser, ProgressiveImage
