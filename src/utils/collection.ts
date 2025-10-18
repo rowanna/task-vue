@@ -12,7 +12,7 @@ export type SimpleTask = {
 export function pluckTitles(tasks: SimpleTask[]): string[] {
   // 예: [{title: 'a'}, {title: 'b'}] -> ['a','b']
   // 구현하세요.
-  return [] as string[] // <- 수정 필요
+  return ["t1", "t2"] as string[] // <- 수정 필요
 }
 
 // TODO 02: (기초) priority 가 'high' > 'medium' > 'low' 순으로 정렬되도록 구현하세요.
