@@ -28,8 +28,8 @@
 각 TODO 옆의 파일을 열고 주석 내용을 따라 구현하세요.
 
 - [x] TODO 00 Fork 후 로컬에서 `npm install` 및 README.md 파일을 읽고 이해
-- [ ] TODO 01 (기초) — src/utils/collection.ts: pluckTitles 구현
-- [ ] TODO 02 (기초) — src/utils/collection.ts: highPriorityFirst 구현
+- [x] TODO 01 (기초) — src/utils/collection.ts: pluckTitles 구현
+- [x] TODO 02 (기초) — src/utils/collection.ts: highPriorityFirst 구현
 - [ ] TODO 03 (기초) — src/utils/collection.ts: groupByDone 구현
 - [ ] TODO 04 (기초+TS) — src/utils/debounce.ts: createDebounced 구현 ({ call, cancel, flush })
 - [ ] TODO 05 (TS) — src/components/ProjectList.vue: onSelect 시그니처를 더 안전한 타입으로 개선
@@ -39,7 +39,7 @@
 - [ ] TODO 09 (중급) — src/hooks/useProgressiveImage.ts: image 연동 훅 구현
 - [ ] TODO 10 (리팩토링) — src/components/TaskBoard.vue: 진행률 계산을 순수 함수로 추출 (예: src/utils/progress.ts)
 - [ ] TODO 11 (로직개선) — src/components/TaskBoard.vue: task 생성 시 trim/중복 방지 로직 추가
-- [ ] TODO 12 (CSS) — src/styles/taskBoard.css: .task-done 스타일 개선 (회색, 취소선 등)
+- [x] TODO 12 (CSS) — src/styles/taskBoard.css: .task-done 스타일 개선 (회색, 취소선 등)
 - [ ] TODO 13 (접근성) — src/components/TaskBoard.vue: 입력 필드에 aria-\* 속성 추가
 - [ ] TODO 14 (CSS/UX) — src/components/ProgressiveImage.vue: small→large 페이드 전환 효과
 
