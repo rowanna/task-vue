@@ -7,22 +7,27 @@
 - 필요할 경우 TODO 외의 기존 코드를 수정하거나 보완하셔도 괜찮습니다.
 
 ## 실행 방법
+
 - 개발 서버: npm run dev
 - 테스트(터미널): npm run test:run
 
 ## Mock API 지연 시간 설정 (옵션)
+
 로컬 메모리 기반 Mock API를 사용합니다. 호출 지연은 고정 혹은 랜덤으로 설정 가능합니다.
+
 - 고정 지연: VITE_MOCK_DELAY_MS=200
 - 랜덤 지연: VITE_MOCK_DELAY_MIN_MS=50, VITE_MOCK_DELAY_MAX_MS=400
 
 설정 방법 예시:
+
 - .env 파일에 위 키를 추가하거나,
 - 터미널에서 즉시 지정: VITE_MOCK_DELAY_MS=200 npm run dev
 
 ## 문제 목록
-각 TODO 옆의 파일을 열고 주석 내용을 따라 구현하세요. 
 
-- [ ] TODO 00 Fork 후 로컬에서 `npm install` 및 README.md 파일을 읽고 이해
+각 TODO 옆의 파일을 열고 주석 내용을 따라 구현하세요.
+
+- [x] TODO 00 Fork 후 로컬에서 `npm install` 및 README.md 파일을 읽고 이해
 - [ ] TODO 01 (기초) — src/utils/collection.ts: pluckTitles 구현
 - [ ] TODO 02 (기초) — src/utils/collection.ts: highPriorityFirst 구현
 - [ ] TODO 03 (기초) — src/utils/collection.ts: groupByDone 구현
@@ -35,15 +40,17 @@
 - [ ] TODO 10 (리팩토링) — src/components/TaskBoard.vue: 진행률 계산을 순수 함수로 추출 (예: src/utils/progress.ts)
 - [ ] TODO 11 (로직개선) — src/components/TaskBoard.vue: task 생성 시 trim/중복 방지 로직 추가
 - [ ] TODO 12 (CSS) — src/styles/taskBoard.css: .task-done 스타일 개선 (회색, 취소선 등)
-- [ ] TODO 13 (접근성) — src/components/TaskBoard.vue: 입력 필드에 aria-* 속성 추가
+- [ ] TODO 13 (접근성) — src/components/TaskBoard.vue: 입력 필드에 aria-\* 속성 추가
 - [ ] TODO 14 (CSS/UX) — src/components/ProgressiveImage.vue: small→large 페이드 전환 효과
 
 추가 팁:
+
 - lodash 사용 가능 (컬렉션 조작, 정렬, debounce 등)
 - 테스트는 Vue 의존성 없이 작성된 샘플이 있으며, 일부는 test.todo 로 표시되어 있습니다.
 
 ## 폴더 구조 개요
+
 - src/utils: 컬렉션/디바운스/이미지 로딩 유틸
 - src/hooks: 커스텀 훅 (디바운스, 프로그레시브 이미지)
 - src/components: ProjectList, TaskBoard, SearchUser, ProgressiveImage
-- src/__tests__: Vue 비의존 유닛 테스트 (Vitest)
+- src/**tests**: Vue 비의존 유닛 테스트 (Vitest)
