@@ -62,8 +62,14 @@ const progress = computed(() => {
     <h2>Task Board</h2>
     <div class="taskboard__create">
       <!-- TODO 13: (접근성) 입력 필드에 적절한 aria-* 속성을 추가하세요. -->
-      <input v-model="title" placeholder="New task title" />
-      <button type="button" @click="handleCreate">Add</button>
+      <input
+        aria-label="태스크를 입력해 주세요"
+        v-model="title"
+        placeholder="New task title"
+      />
+      <button aria-label="태스크 추가하기" type="button" @click="handleCreate">
+        Add
+      </button>
     </div>
 
     <div class="taskboard__progress">
