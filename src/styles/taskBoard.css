@@ -15,4 +15,6 @@
 }
 .task-done {
   /* 구현하세요. */
+  color: grey;
+  text-decoration: line-through;
 }
