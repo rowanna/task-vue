@@ -22,6 +22,24 @@ export function highPriorityFirst(tasks: SimpleTask[]): SimpleTask[] {
   const order = { high: 0, medium: 1, low: 2 } as const;
   // lodash.sortBy 또는 Array.prototype.sort 를 사용할 수 있습니다.
   // 구현하세요.
+  function comparePriority(a: SimpleTask, b: SimpleTask) {
+    a.priority = a.priority ?? "low";
+    b.priority = b.priority ?? "low";
+
+    if (
+      (a.priority === "high" && b.priority === "medium") ||
+      (a.priority === "medium" && b.priority === "low")
+    )
+      return -1;
+    else if (
+      (a.priority === "medium" && b.priority === "high") ||
+      (a.priority === "low" && b.priority === "medium")
+    )
+      return -0;
+    else if (a.priority === b.priority) return 0;
+    else return 0;
+  }
+  tasks.sort(comparePriority);
   return tasks;
 }
 
