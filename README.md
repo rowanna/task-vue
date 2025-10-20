@@ -32,7 +32,7 @@
 - [x] TODO 02 (기초) — src/utils/collection.ts: highPriorityFirst 구현
 - [ ] TODO 03 (기초) — src/utils/collection.ts: groupByDone 구현
 - [ ] TODO 04 (기초+TS) — src/utils/debounce.ts: createDebounced 구현 ({ call, cancel, flush })
-- [ ] TODO 05 (TS) — src/components/ProjectList.vue: onSelect 시그니처를 더 안전한 타입으로 개선
+- [x] TODO 05 (TS) — src/components/ProjectList.vue: onSelect 시그니처를 더 안전한 타입으로 개선
 - [ ] TODO 06 (중급) — src/hooks/useDebouncedValue.ts: debounce 값 반환 훅 구현
 - [ ] TODO 07 (중급) — src/api/mock/index.ts: getDashboard 를 Promise.all 로 구현
 - [ ] TODO 08 (lodash debounce) — src/components/SearchUser.vue: 입력 디바운스 적용 및 cancel 처리
